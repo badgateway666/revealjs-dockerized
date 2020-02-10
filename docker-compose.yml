@@ -1,0 +1,9 @@
+version: '3'
+services:
+  revealjs:
+    build: docker/.
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./demo/index.html:/app/index.html:ro
+
